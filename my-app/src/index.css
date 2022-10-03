@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    outline: none;
+    background-color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type="checkbox"],
+input[type="radio"]
+ {
+    height: 0;
+    width: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    max-width: 450px;
+    background-color:#f7ad30 ;
+}
+
+footer {
+    flex-direction: column;
+}
+
+.root{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupinfo {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.personalinfo {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media screen and (max-width: 400px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .submit {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .change {
+        width: 100%;
+    }
+
+    .header-logo {
+        margin-right: 0;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.custom-check {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #f7ad30;
+    margin-right: 8px;
+  }
+  
+.custom-check-icon {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #f7ad30;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-check-icon.active {
+    opacity: 1;
+}
+
+.custom-check-radio {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #f7ad30;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+.custom-check-input {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #f7ad30;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-check-input.active {
+    opacity: 1;
+}
